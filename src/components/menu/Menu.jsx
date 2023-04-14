@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import BurgerMenu from '../burger/BurgerMenu';
+
 
 function Menu() {
-   const [showSidebar, setShowSidebar] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
   const menuItems = [
     {
       name: 'NEW CARS',
@@ -35,32 +35,13 @@ function Menu() {
           }
         >
           {menuItems.map((menuItem, index) => (
-            <li
-              className="menu__list-item"
-              key={index}
-              // close={() => setShowSidebar(!showSidebar)}
-            >
+            <li className="menu__list-item" key={index}>
               <NavLink to={menuItem.path} className="menu__list-link">
                 {menuItem.name}
               </NavLink>
             </li>
           ))}
         </ul>
-
-        {/* {showSidebar && (
-        <ul
-          className="menu__adaptive"
-          close={() => setShowSidebar(!showSidebar)}
-        >
-          {links.map((link, index) => (
-            <li className="menu__list">
-              <Link to={link.path} className="menu__link" key={index}>
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )} */}
       </nav>
       <div
         onClick={() => setShowSidebar(!showSidebar)}
