@@ -1,0 +1,25 @@
+.how-does {
+  padding-bottom: 150px;
+  &__inner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__subtitle{
+    padding-top: 50px;
+  }
+
+  &__list {
+    padding: 50px 0 70px 77px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    min-height: 63px;
+  }
+}

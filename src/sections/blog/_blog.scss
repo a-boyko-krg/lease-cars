@@ -1,0 +1,28 @@
+.blog {
+  // margin-bottom: 150px;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+  }
+
+  &__item-img {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  &__item-title {
+    flex-basis: 446px;
+  }
+}
+
+.blog-link {
+    margin: 0 auto 150px;
+ }

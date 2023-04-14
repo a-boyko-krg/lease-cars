@@ -1,0 +1,28 @@
+.important {
+  padding-bottom: 150px;
+  &_cards-text {
+    max-width: 270px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 10px;
+  }
+
+  &__cards-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.important-title {
+  margin-bottom: 40px;
+}
+.important-text {
+  max-width: 580px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}

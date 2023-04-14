@@ -1,0 +1,64 @@
+.menu {
+  color: var(--background-color);
+}
+
+.menu__list {
+  display: flex;
+  gap: 35px;
+}
+
+.menu__list-link {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+
+.burger-btn {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  .bar {
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background-color:  var(--background-color);
+    position: absolute;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 50%;
+      transform-origin: right;
+      transform: scaleX(0.8) translateY(-50%);
+    }
+    &:nth-child(3) {
+      top: 100%;
+      transform-origin: right;
+      transform: scaleX(1.1) translateY(-100%);
+    }
+  }
+  &.active {
+    .bar {
+      transform-origin: center;
+      top: 50%;
+      &:nth-child(1) {
+        transform: translate(0, -50%) scale(1) rotate(45deg);
+      }
+      &:nth-child(2) {
+        transform: scaleX(0) translateY(-50%);
+      }
+      &:nth-child(3) {
+        transform: translate(0, -50%) scale(1) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.menu__adaptive{
+   display: none;
+}
+

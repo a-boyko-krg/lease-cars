@@ -1,0 +1,82 @@
+@import './reset.scss';
+@import './variables.scss';
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.main {
+  min-height: calc(100vh - 713px); //высота экрана минус высота хедера и футера
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 58px;
+}
+
+.section__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.black-btn {
+  text-transform: uppercase;
+  color: var(--background-color);
+  background-color: var(--text-color);
+  padding: 13px;
+  width: 225px;
+  text-align: center;
+  display: block;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.blue-btn {
+  text-transform: lowercase;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 4px 20px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+
+
+@import '@/containers/header/header.scss';
+@import '@/components/menu/menu.scss';
+@import '@/sections/hero/hero.scss';
+@import '@/components/swiper/swiper.scss';
+@import '@/sections/why-lease/whylease.scss';
+@import '@/sections/how-does/howdoes.scss';
+@import '@/sections/welcome/welcome.scss';
+@import '@/sections/important/important.scss';
+@import '@/components/form/form.scss';
+@import '@/sections/blog/blog.scss';
+@import '@/containers/newcars/newcars.scss';
+@import '@/containers/footer/footer.scss';
+@import './adaptive.scss';

@@ -1,0 +1,23 @@
+.why-lease {
+  padding: 150px 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+
+  &__item-img {
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    margin-bottom: 30px;
+     
+  }
+
+  &__item-text {
+    text-align: left;
+  }
+}

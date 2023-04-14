@@ -1,0 +1,17 @@
+.header {
+  background-color: var(--text-color);
+
+}
+.header-main {
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+}
+.header__inner {
+  padding: 40px 10px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

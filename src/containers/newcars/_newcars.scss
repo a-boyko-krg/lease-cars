@@ -1,0 +1,61 @@
+.choose {
+  padding: 100px 0 150px;
+  &__cars-link {
+    margin: 0 auto;
+  }
+}
+
+.tabs {
+  &__btn {
+    padding: 0 150px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  &__btn-item {
+    font-size: 24px;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &__content {
+    margin-bottom: 70px;
+  }
+
+  &__content-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;
+  }
+}
+.card {
+  text-align: center;
+  &__img {
+    width: 100%;
+  }
+  &__content {
+    padding: 0 5px;
+    border: 1px solid var(--primary-color);
+    border-top: 0;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    margin-bottom: 20px;
+  }
+
+  &__link {
+    display: block;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-top: 0;
+  }
+}

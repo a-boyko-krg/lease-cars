@@ -1,0 +1,29 @@
+.top {
+  color: var(--background-color);
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+
+.top__title {
+  margin-bottom: 120px;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 116px;
+
+}
+
+.top__link {
+  background-color: var(--text-color);
+  padding: 23px 112px;
+  max-width: 430px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+}
+
